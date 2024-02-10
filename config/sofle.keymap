@@ -31,7 +31,7 @@
         ctrl_alt_del: ctrl_alt_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp LEFT_ALT &kp DELETE>;
+            bindings = <&kp RCTRL &kp LEFT_ALT &kp DEL>;
             label = "CTRL_ALT_DEL";
         };
 
