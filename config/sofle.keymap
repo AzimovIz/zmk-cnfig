@@ -41,6 +41,17 @@
             bindings = <&kp RCTRL &kp LEFT_SHIFT &kp ESC>;
             label = "DISP";
         };
+
+        cal: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_ALT &kp DELETE>,
+                <&macro_release>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
@@ -111,11 +122,11 @@
 
         macr_layer {
             bindings = <
-&none  &none  &ctrl_alt_del  &disp  &none  &none                  &none  &none   &none    &none   &kp FSLH   &kp STAR
-&none  &none  &none          &none  &none  &none                  &none  &kp N7  &kp N8   &kp N9  &kp MINUS  &kp PLUS
-&none  &none  &none          &none  &none  &none                  &none  &kp N4  &kp N5   &kp N6  &none      &kp EQUAL
-&none  &none  &none          &none  &none  &none  &none    &none  &none  &kp N1  &kp N2   &kp N3  &none      &kp RET
-              &none          &none  &none  &none  &none    &none  &none  &none   &kp DOT  &kp N0
+&none  &none  &cal   &disp  &none  &none                  &none  &none   &none    &none   &kp FSLH   &kp STAR
+&none  &none  &none  &none  &none  &none                  &none  &kp N7  &kp N8   &kp N9  &kp MINUS  &kp PLUS
+&none  &none  &none  &none  &none  &none                  &none  &kp N4  &kp N5   &kp N6  &none      &kp EQUAL
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &kp N1  &kp N2   &kp N3  &none      &kp RET
+              &none  &none  &none  &none  &none    &none  &none  &none   &kp DOT  &kp N0
             >;
 
             label = "macrs";
