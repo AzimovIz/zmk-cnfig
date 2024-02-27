@@ -28,17 +28,14 @@
     };
 
     macros {
-        ctrl_alt_del: ctrl_alt_del {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp LEFT_ALT &kp DEL>;
-            label = "CTRL_ALT_DEL";
-        };
-
         disp: disp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp LEFT_SHIFT &kp ESC>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL &kp LEFT_SHIFT &kp ESC>,
+                <&macro_release>;
+
             label = "DISP";
         };
 
@@ -51,6 +48,13 @@
                 <&macro_release>;
 
             label = "NEW_MACRO";
+        };
+
+        sob: sob {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp V &kp J &kp N &kp H &kp T &kp N &kp M &kp SPACE &kp J &kp Y &kp K &kp F &kp Q &kp Y &kp SPACE &kp COMMA &kp T &kp C &kp G &kp K &kp F &kp N &kp Y &kp J>;
+            label = "SOB";
         };
     };
 
