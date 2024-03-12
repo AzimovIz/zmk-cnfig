@@ -102,6 +102,21 @@
             key-positions = <11 23>;
             layers = <2>;
         };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <39 40>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <39 38>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <38 37>;
+        };
     };
 
     keymap {
