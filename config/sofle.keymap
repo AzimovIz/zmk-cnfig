@@ -85,6 +85,23 @@
             bindings = <&kp EQUAL>;
             key-positions = <9 10>;
         };
+
+        bslash {
+            bindings = <&kp BSLH>;
+            key-positions = <11 23>;
+            layers = <0>;
+        };
+
+        prob {
+            bindings = <&kp SPACE>;
+            key-positions = <55 56>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <11 23>;
+            layers = <2>;
+        };
     };
 
     keymap {
