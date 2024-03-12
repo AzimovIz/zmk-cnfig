@@ -117,6 +117,26 @@
             bindings = <&kp LC(X)>;
             key-positions = <38 37>;
         };
+
+        up {
+            bindings = <&kp UP>;
+            key-positions = <32 20>;
+        };
+
+        doun {
+            bindings = <&kp DOWN>;
+            key-positions = <32 46>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <32 31>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <32 33>;
+        };
     };
 
     keymap {
