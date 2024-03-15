@@ -137,6 +137,11 @@
             bindings = <&kp RIGHT>;
             key-positions = <32 33>;
         };
+
+        sob {
+            bindings = <&sob>;
+            key-positions = <0 1>;
+        };
     };
 
     keymap {
