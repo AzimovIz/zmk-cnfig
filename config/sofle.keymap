@@ -25,6 +25,11 @@
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
         };
+
+        left {
+            if-layers = <2 4>;
+            then-layer = <5>;
+        };
     };
 
     macros {
@@ -220,6 +225,16 @@
             >;
 
             label = "macrs";
+        };
+
+        left {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp Q   &kp W   &kp E   &kp R   &kp T
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp A   &kp S   &kp D   &kp F   &kp G
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp Z   &kp X   &kp C   &kp V   &kp B
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
