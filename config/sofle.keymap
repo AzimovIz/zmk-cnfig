@@ -102,12 +102,6 @@
             key-positions = <55 56>;
         };
 
-        del {
-            bindings = <&kp DEL>;
-            key-positions = <11 23>;
-            layers = <2>;
-        };
-
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <39 40>;
@@ -146,6 +140,16 @@
         sob {
             bindings = <&sob>;
             key-positions = <0 1>;
+        };
+
+        close {
+            bindings = <&kp LA(F4)>;
+            key-positions = <4 16>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <49 35>;
         };
     };
 
